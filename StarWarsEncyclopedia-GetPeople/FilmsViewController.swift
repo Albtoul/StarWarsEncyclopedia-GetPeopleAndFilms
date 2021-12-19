@@ -14,7 +14,7 @@ class FilmsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://swapi.dev/api/films/?format=json")!
+        let url = URL(string: "https://swapi.py4e.com/api/films")!
         URLSession.shared.dataTask(with: url, completionHandler: {
             data, response, error in
             do{
